@@ -13,12 +13,10 @@ metadata:
     nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   tls:
-  - hosts:
-    - shanhy-k8s.com
-    - "*.shanhy-k8s.com"
+  - hosts:    
     secretName: kubernetes-dashboard-certs
   rules:
-  - host: dashboard.shanhy-k8s.com
+  - host: /dashboard
     http:
       paths:
       - path: /
