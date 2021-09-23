@@ -16,7 +16,7 @@ spec:
   - hosts:    
     secretName: kubernetes-dashboard-certs
   rules:
-  - name: dashboard
+  - host: dashboard
     http:
       paths:
       - path: /
